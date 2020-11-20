@@ -84,13 +84,47 @@ h2 {
 }
 
 .icons {
+  font-size: 0px;
   position: relative;
-  left: -33px;
+  left: -40px;
+  height: 60px;
 }
 
-.icon {
-  width: 35px;
-  margin-right: 10px;
+.icons .icon {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  position: absolute;
+  width: 50px;
+  padding: 5px 10px 5px 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.icons .A:hover {
+  width: 55px;
+  -webkit-transform: translateX(-5%) translateY(-50%);
+          transform: translateX(-5%) translateY(-50%);
+}
+
+.icons .B {
+  left: 50px;
+}
+
+.icons .B:hover {
+  width: 55px;
+  -webkit-transform: translateX(-5%) translateY(-50%);
+          transform: translateX(-5%) translateY(-50%);
+}
+
+.icons .C {
+  left: 100px;
+}
+
+.icons .C:hover {
+  width: 55px;
+  -webkit-transform: translateX(-5%) translateY(-50%);
+          transform: translateX(-5%) translateY(-50%);
 }
 
 .motto {
@@ -204,7 +238,7 @@ h2 {
   border-radius: 5px;
   background: #000;
   margin-top: 27px;
-  margin-bottom: 80px;
+  margin-bottom: 86px;
 }
 
 .article {
@@ -259,19 +293,32 @@ h2 {
 }
 
 .protfolio .br {
-  height: 70px;
+  height: 80px;
 }
 
 .protfolio .proCard {
   overflow: hidden;
   border-radius: 20px;
-  margin-bottom: 45px;
+  margin-bottom: 57px;
   -webkit-box-shadow: -5px 7px 15px -5px #AAA;
           box-shadow: -5px 7px 15px -5px #AAA;
 }
 
+.protfolio .imgBox {
+  height: 379px;
+  overflow: hidden;
+}
+
 .protfolio img {
   width: 346px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.protfolio img:hover {
+  -webkit-transform: translateX(-5%) translateY(-3%);
+          transform: translateX(-5%) translateY(-3%);
+  width: calc(346px * 1.1);
 }
 
 .protfolio .description {
@@ -341,9 +388,24 @@ h2 {
       align-content: flex-start;
 }
 
-.elseProt .elseProCard {
+.elseProt .imgBox {
+  height: 274px;
   width: 250px;
   border-radius: 10px;
   margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.elseProt .imgBox .elseProCard {
+  width: 250px;
+  width: 250px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.elseProt .imgBox .elseProCard:hover {
+  -webkit-transform: translateX(-2.5%) translateY(-2.5%);
+          transform: translateX(-2.5%) translateY(-2.5%);
+  width: calc(250px * 1.05);
 }
 /*# sourceMappingURL=all.css.map */

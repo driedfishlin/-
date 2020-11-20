@@ -82,13 +82,36 @@ h2 {
 }
 
 .icons {
+    font-size: 0px;
     position: relative;
-    left: -33px;
-}
-
-.icon {
-    width: 35px;
-    margin-right: 10px;
+    left: -40px;
+    height: 60px;
+    .icon {
+        transform: translateY(-50%);
+        top: 50%;
+        position: absolute;
+        width: 50px;
+        padding: 5px 10px 5px 5px;
+        transition: all .5s;
+    }
+    .A:hover {
+        width: 55px;
+        transform: translateX(-5%) translateY(-50%);
+    }
+    .B {
+        left: 50px;
+        &:hover {
+            width: 55px;
+            transform: translateX(-5%) translateY(-50%);
+        }
+    }
+    .C {
+        left: 100px;
+        &:hover {
+            width: 55px;
+            transform: translateX(-5%) translateY(-50%);
+        }
+    }
 }
 
 //motto
@@ -193,7 +216,7 @@ h2 {
         border-radius: 5px;
         background: #000;
         margin-top: 27px;
-        margin-bottom: 80px;
+        margin-bottom: 86px;
     }
 }
 
@@ -241,16 +264,25 @@ h2 {
         top: 17px;
     }
     .br {
-        height: 70px;
+        height: 80px;
     }
     .proCard {
         overflow: hidden;
         border-radius: 20px;
-        margin-bottom: 45px;
+        margin-bottom: 57px;
         box-shadow: -5px 7px 15px -5px #AAA;
+    }
+    .imgBox {
+        height: 379px;
+        overflow: hidden;
     }
     img {
         width: 346px;
+        transition: all .5s;
+        &:hover {
+            transform: translateX(-5%) translateY(-3%);
+            width: calc(346px * 1.1);
+        }
     }
     .description {
         padding: 15px 20px;
@@ -311,12 +343,21 @@ h2 {
         margin-top: 60px;
         justify-content: space-between;
         align-content: flex-start;
-        // margin-bottom: 35px;
     }
-    .elseProCard {
+    .imgBox {
+        height: 274px;
         width: 250px;
         border-radius: 10px;
-        // box-shadow: -5px 7px 15px -5px #AAA;
         margin-bottom: 40px;
+        overflow: hidden;
+        .elseProCard {
+            width: 250px;
+            width: 250px;
+            transition: all .5s;
+            &:hover {
+                transform: translateX(-2.5%) translateY(-2.5%);
+                width: calc(250px * 1.05);
+            }
+        }
     }
 }
