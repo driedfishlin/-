@@ -170,6 +170,7 @@ h2 {
 }
 
 .main h5 {
+  letter-spacing: 0.08em;
   font-size: 20px;
   margin: 0px 0 20px 0;
   font-family: 'Noto Serif TC', serif;
@@ -258,13 +259,13 @@ h2 {
 }
 
 .protfolio .br {
-  height: 80px;
+  height: 70px;
 }
 
 .protfolio .proCard {
   overflow: hidden;
   border-radius: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   -webkit-box-shadow: -5px 7px 15px -5px #AAA;
           box-shadow: -5px 7px 15px -5px #AAA;
 }
@@ -277,15 +278,27 @@ h2 {
   padding: 15px 20px;
   font-size: 15px;
   background: #FFF;
-  height: 50px;
   width: 346px;
   font-family: 'Noto Sans TC';
-  font-weight: 400;
   text-align: center;
   letter-spacing: 0.05em;
 }
 
+.protfolio .description .title {
+  font-weight: 600;
+  margin: 5px 0 10px 0;
+}
+
+.protfolio .description .content {
+  text-align: justify;
+  font-size: 15px;
+  text-indent: 29px;
+  padding: 0 10px;
+  line-height: 1.7;
+}
+
 .elseProt h5 {
+  letter-spacing: 0.08em;
   font-size: 20px;
   margin: 0px 0 20px 0;
   font-family: 'Noto Serif TC', serif;
