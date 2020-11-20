@@ -19,35 +19,36 @@ body {
 }
 
 .page {
+    // height: 100%;
     width: 1024px;
     background: rgb(255, 255, 255);
     position: relative;
     padding: 50px 80px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.pageA {
-    margin: 80px auto 0px auto;
-}
-
-.pageB {
-    margin: 0px auto 80px auto;
 }
 
 .shadow {
+    // height: 100%;
     box-shadow: -10px 10px 30px #777;
     width: 1024px;
-    margin: auto;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 80px auto 80px auto;
 }
 
 // header
 .header {
     display: flex;
+    .lineCol {
+        width: 10px;
+        height: 131px;
+        background: #000;
+        margin-top: 12px;
+        margin-right: 20px;
+        // border-radius: 10px;
+    }
 }
 
 #persPhoto {
-    // position: absolute;
     width: 600px;
     position: relative;
     top: -30px;
@@ -61,14 +62,6 @@ body {
     right: -80px;
     display: flex;
     margin-top: 200px;
-}
-
-.lineCol {
-    width: 10px;
-    height: 131px;
-    background: #000;
-    margin-top: 12px;
-    margin-right: 20px;
 }
 
 h1,
@@ -100,13 +93,13 @@ h2 {
 
 //motto
 .motto {
-    // transform: rotate(-10deg);
+    transform: rotate(-10deg);
     z-index: 2;
     font-family: 'Noto Serif TC', serif;
-    width: 1024px;
+    width: 1200px;
     margin: auto;
     position: relative;
-    // left: -40px;
+    left: -170px;
     background: rgb(46, 49, 51);
     padding: 23px 0 45px 0;
     color: white;
@@ -125,7 +118,7 @@ h2 {
     .p {
         display: inline-block;
         position: relative;
-        left: 20%;
+        left: 24%;
         top: -4px;
         width: 80%;
     }
@@ -139,37 +132,178 @@ h2 {
 
 .curlyBracesL {
     position: absolute;
-    left: 130px;
+    left: 210px;
 }
 
 .curlyBracesR {
     position: absolute;
-    right: 130px;
+    right: 210px;
+}
+
+// contact
+.contact {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    position: relative;
+    letter-spacing: 0.08em;
+}
+
+.information {
+    position: absolute;
+    top: 30px;
+    right: 0px;
 }
 
 // main
 .main {
     display: flex;
     justify-content: space-between;
+    margin-top: 200px;
+    height: 100%;
+    h5 {
+        font-size: 20px;
+        margin: 0px 0 20px 0;
+        font-family: 'Noto Serif TC', serif;
+        font-weight: 600;
+        display: inline-block;
+        position: absolute;
+        background: #FFF;
+        z-index: 1;
+        &::before {
+            content: "❯ ";
+            font-size: 23px;
+        }
+        &::after {
+            content: "　";
+        }
+    }
+    .hr {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        // left: 10px;
+        top: 2px;
+        background: #000;
+        height: 2px;
+    }
+    .lineCol {
+        width: 4px;
+        border-radius: 5px;
+        background: #000;
+        margin-top: 27px;
+        margin-bottom: 80px;
+    }
 }
 
 .article {
     width: 40%;
     margin-top: 20px;
     .card {
-        margin-bottom: 50px;
-    }
-    h5 {
-        font-size: 20px;
-        margin: 0px 0 20px 0;
+        margin-bottom: 80px;
+        position: relative;
     }
     p {
+        font-size: 16px;
         letter-spacing: 0.07em;
         line-height: 1.7;
+        font-family: 'Noto Sans TC', sans-serif;
+        margin-top: 40px;
+        .bold {
+            font-weight: 700;
+            font-size: 14px;
+            &::after {
+                content: "　";
+                font-size: 30px;
+            }
+        }
+    }
+    .skill {
+        font-size: 14px;
+        border: 1px solid #000;
+        display: inline-block;
+        border-radius: 15px;
+        padding: 2px 8px;
+        margin: 7px 3px;
+    }
+    .skillA {
+        margin-top: 40px;
     }
 }
 
 .protfolio {
+    font-size: 0;
     width: 40%;
     margin-top: 20px;
+    // padding-bottom: 50px;
+    .hr {
+        top: 17px;
+    }
+    .br {
+        height: 80px;
+    }
+    .proCard {
+        overflow: hidden;
+        border-radius: 20px;
+        margin-bottom: 50px;
+        box-shadow: -5px 7px 15px -5px #AAA;
+    }
+    img {
+        width: 346px;
+    }
+    .description {
+        padding: 15px 20px;
+        font-size: 15px;
+        // color: white;
+        background: #FFF;
+        height: 50px;
+        width: 346px;
+        font-family: 'Noto Sans TC';
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.05em;
+    }
+}
+
+.elseProt {
+    h5 {
+        font-size: 20px;
+        margin: 0px 0 20px 0;
+        font-family: 'Noto Serif TC', serif;
+        font-weight: 600;
+        display: inline-block;
+        position: absolute;
+        background: #FFF;
+        z-index: 1;
+        &::before {
+            content: "❯ ";
+            font-size: 23px;
+        }
+        &::after {
+            content: "　";
+        }
+    }
+    .hr {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        // left: 10px;
+        top: 2px;
+        background: #000;
+        height: 2px;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        justify-content: space-between;
+        align-content: flex-start;
+        // margin-bottom: 35px;
+    }
+    .elseProCard {
+        width: 250px;
+        border-radius: 10px;
+        // box-shadow: -5px 7px 15px -5px #AAA;
+        margin-bottom: 40px;
+    }
 }

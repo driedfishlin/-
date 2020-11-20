@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -22,29 +23,29 @@ body {
   background: white;
   position: relative;
   padding: 50px 80px;
-  margin: auto;
-  overflow: hidden;
-}
-
-.pageA {
-  margin: 80px auto 0px auto;
-}
-
-.pageB {
-  margin: 0px auto 80px auto;
 }
 
 .shadow {
   -webkit-box-shadow: -10px 10px 30px #777;
           box-shadow: -10px 10px 30px #777;
   width: 1024px;
-  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 80px auto 80px auto;
 }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.header .lineCol {
+  width: 10px;
+  height: 131px;
+  background: #000;
+  margin-top: 12px;
+  margin-right: 20px;
 }
 
 #persPhoto {
@@ -63,14 +64,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 200px;
-}
-
-.lineCol {
-  width: 10px;
-  height: 131px;
-  background: #000;
-  margin-top: 12px;
-  margin-right: 20px;
 }
 
 h1,
@@ -101,11 +94,14 @@ h2 {
 }
 
 .motto {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
   z-index: 2;
   font-family: 'Noto Serif TC', serif;
-  width: 1024px;
+  width: 1200px;
   margin: auto;
   position: relative;
+  left: -170px;
   background: #2e3133;
   padding: 23px 0 45px 0;
   color: white;
@@ -127,7 +123,7 @@ h2 {
 .motto .p {
   display: inline-block;
   position: relative;
-  left: 20%;
+  left: 24%;
   top: -4px;
   width: 80%;
 }
@@ -140,12 +136,26 @@ h2 {
 
 .curlyBracesL {
   position: absolute;
-  left: 130px;
+  left: 210px;
 }
 
 .curlyBracesR {
   position: absolute;
-  right: 130px;
+  right: 210px;
+}
+
+.contact {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 700;
+  width: 100%;
+  position: relative;
+  letter-spacing: 0.08em;
+}
+
+.information {
+  position: absolute;
+  top: 30px;
+  right: 0px;
 }
 
 .main {
@@ -155,6 +165,45 @@ h2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 200px;
+  height: 100%;
+}
+
+.main h5 {
+  font-size: 20px;
+  margin: 0px 0 20px 0;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 600;
+  display: inline-block;
+  position: absolute;
+  background: #FFF;
+  z-index: 1;
+}
+
+.main h5::before {
+  content: "❯ ";
+  font-size: 23px;
+}
+
+.main h5::after {
+  content: "　";
+}
+
+.main .hr {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  top: 2px;
+  background: #000;
+  height: 2px;
+}
+
+.main .lineCol {
+  width: 4px;
+  border-radius: 5px;
+  background: #000;
+  margin-top: 27px;
+  margin-bottom: 80px;
 }
 
 .article {
@@ -163,21 +212,125 @@ h2 {
 }
 
 .article .card {
-  margin-bottom: 50px;
-}
-
-.article h5 {
-  font-size: 20px;
-  margin: 0px 0 20px 0;
+  margin-bottom: 80px;
+  position: relative;
 }
 
 .article p {
+  font-size: 16px;
   letter-spacing: 0.07em;
   line-height: 1.7;
+  font-family: 'Noto Sans TC', sans-serif;
+  margin-top: 40px;
+}
+
+.article p .bold {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.article p .bold::after {
+  content: "　";
+  font-size: 30px;
+}
+
+.article .skill {
+  font-size: 14px;
+  border: 1px solid #000;
+  display: inline-block;
+  border-radius: 15px;
+  padding: 2px 8px;
+  margin: 7px 3px;
+}
+
+.article .skillA {
+  margin-top: 40px;
 }
 
 .protfolio {
+  font-size: 0;
   width: 40%;
   margin-top: 20px;
+}
+
+.protfolio .hr {
+  top: 17px;
+}
+
+.protfolio .br {
+  height: 80px;
+}
+
+.protfolio .proCard {
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: -5px 7px 15px -5px #AAA;
+          box-shadow: -5px 7px 15px -5px #AAA;
+}
+
+.protfolio img {
+  width: 346px;
+}
+
+.protfolio .description {
+  padding: 15px 20px;
+  font-size: 15px;
+  background: #FFF;
+  height: 50px;
+  width: 346px;
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.elseProt h5 {
+  font-size: 20px;
+  margin: 0px 0 20px 0;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 600;
+  display: inline-block;
+  position: absolute;
+  background: #FFF;
+  z-index: 1;
+}
+
+.elseProt h5::before {
+  content: "❯ ";
+  font-size: 23px;
+}
+
+.elseProt h5::after {
+  content: "　";
+}
+
+.elseProt .hr {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  top: 2px;
+  background: #000;
+  height: 2px;
+}
+
+.elseProt .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.elseProt .elseProCard {
+  width: 250px;
+  border-radius: 10px;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=all.css.map */
