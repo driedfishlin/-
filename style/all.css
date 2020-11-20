@@ -18,13 +18,27 @@ body {
 }
 
 .page {
-  width: 1200px;
+  width: 1024px;
   background: white;
-  margin: 50px auto 50px auto;
   position: relative;
   padding: 50px 80px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.pageA {
+  margin: 80px auto 0px auto;
+}
+
+.pageB {
+  margin: 0px auto 80px auto;
+}
+
+.shadow {
   -webkit-box-shadow: -10px 10px 30px #777;
           box-shadow: -10px 10px 30px #777;
+  width: 1024px;
+  margin: auto;
 }
 
 .header {
@@ -37,17 +51,18 @@ body {
   width: 600px;
   position: relative;
   top: -30px;
+  left: -50px;
 }
 
 .hBlock {
   width: 500px;
   height: 500px;
   position: absolute;
-  right: 0px;
+  right: -80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 180px;
+  margin-top: 200px;
 }
 
 .lineCol {
@@ -77,7 +92,7 @@ h2 {
 
 .icons {
   position: relative;
-  left: -25px;
+  left: -33px;
 }
 
 .icon {
@@ -86,28 +101,34 @@ h2 {
 }
 
 .motto {
+  z-index: 2;
   font-family: 'Noto Serif TC', serif;
-  width: 100%;
+  width: 1024px;
+  margin: auto;
   position: relative;
-  background: #dad9d8;
+  background: #2e3133;
+  padding: 23px 0 45px 0;
+  color: white;
+  font-style: italic;
 }
 
 .motto p {
   display: inline-block;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 2;
   position: relative;
   top: 3px;
   margin: 20px 0 auto;
   width: 100%;
   letter-spacing: 0.1em;
+  font-size: 17px;
 }
 
 .motto .p {
   display: inline-block;
   position: relative;
   left: 20%;
-  right: 20%;
+  top: -4px;
   width: 80%;
 }
 
@@ -119,11 +140,44 @@ h2 {
 
 .curlyBracesL {
   position: absolute;
-  left: 80px;
+  left: 130px;
 }
 
 .curlyBracesR {
   position: absolute;
-  right: 80px;
+  right: 130px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.article {
+  width: 40%;
+  margin-top: 20px;
+}
+
+.article .card {
+  margin-bottom: 50px;
+}
+
+.article h5 {
+  font-size: 20px;
+  margin: 0px 0 20px 0;
+}
+
+.article p {
+  letter-spacing: 0.07em;
+  line-height: 1.7;
+}
+
+.protfolio {
+  width: 40%;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=all.css.map */

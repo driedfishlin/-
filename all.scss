@@ -19,13 +19,26 @@ body {
 }
 
 .page {
-    width: 1200px;
+    width: 1024px;
     background: rgb(255, 255, 255);
-    // height: 100%;
-    margin: 50px auto 50px auto;
     position: relative;
     padding: 50px 80px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.pageA {
+    margin: 80px auto 0px auto;
+}
+
+.pageB {
+    margin: 0px auto 80px auto;
+}
+
+.shadow {
     box-shadow: -10px 10px 30px #777;
+    width: 1024px;
+    margin: auto;
 }
 
 // header
@@ -38,16 +51,16 @@ body {
     width: 600px;
     position: relative;
     top: -30px;
+    left: -50px;
 }
 
 .hBlock {
-    // background: rgb(58, 78, 63);
     width: 500px;
     height: 500px;
     position: absolute;
-    right: 0px;
+    right: -80px;
     display: flex;
-    margin-top: 180px;
+    margin-top: 200px;
 }
 
 .lineCol {
@@ -61,7 +74,6 @@ body {
 h1,
 h2 {
     font-family: 'Noto Serif TC', serif;
-    // color: #DDD;
 }
 
 h1 {
@@ -78,41 +90,43 @@ h2 {
 
 .icons {
     position: relative;
-    left: -25px;
+    left: -33px;
 }
 
 .icon {
     width: 35px;
-    // height: 50px;
     margin-right: 10px;
-    // margin-top: 30px;
 }
 
 //motto
 .motto {
+    // transform: rotate(-10deg);
+    z-index: 2;
     font-family: 'Noto Serif TC', serif;
-    width: 100%;
-    // margin: auto;
+    width: 1024px;
+    margin: auto;
     position: relative;
-    background: rgb(218, 217, 216);
-    // color: white;
+    // left: -40px;
+    background: rgb(46, 49, 51);
+    padding: 23px 0 45px 0;
+    color: white;
+    font-style: italic;
     p {
         display: inline-block;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 2;
         position: relative;
         top: 3px;
         margin: 20px 0 auto;
-        // text-align: center;
         width: 100%;
         letter-spacing: 0.1em;
+        font-size: 17px;
     }
     .p {
         display: inline-block;
         position: relative;
         left: 20%;
-        right: 20%;
-        // margin: auto;
+        top: -4px;
         width: 80%;
     }
 }
@@ -125,12 +139,37 @@ h2 {
 
 .curlyBracesL {
     position: absolute;
-    left: 80px;
+    left: 130px;
 }
 
 .curlyBracesR {
     position: absolute;
-    right: 80px;
+    right: 130px;
 }
 
 // main
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article {
+    width: 40%;
+    margin-top: 20px;
+    .card {
+        margin-bottom: 50px;
+    }
+    h5 {
+        font-size: 20px;
+        margin: 0px 0 20px 0;
+    }
+    p {
+        letter-spacing: 0.07em;
+        line-height: 1.7;
+    }
+}
+
+.protfolio {
+    width: 40%;
+    margin-top: 20px;
+}
