@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: rgb(236, 150, 52);
+    color: #FFF;
+}
+
 // 頁面設定
 html,
 body {
