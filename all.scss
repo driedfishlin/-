@@ -368,3 +368,40 @@ h2 {
         }
     }
 }
+
+.video {
+    margin-top: 50px;
+    h5 {
+        letter-spacing: 0.08em;
+        font-size: 20px;
+        margin: 0px 0 20px 0;
+        font-family: 'Noto Serif TC', serif;
+        font-weight: 600;
+        display: inline-block;
+        position: absolute;
+        background: #FFF;
+        z-index: 1;
+        &::before {
+            content: "❯ ";
+            font-size: 23px;
+        }
+        &::after {
+            content: "　";
+        }
+    }
+    .hr {
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        // left: 10px;
+        top: 2px;
+        background: #000;
+        height: 2px;
+    }
+    .youtube {
+        margin: 80px 0;
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}

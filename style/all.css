@@ -420,4 +420,46 @@ h2 {
           transform: translateX(-2.5%) translateY(-2.5%);
   width: calc(250px * 1.05);
 }
+
+.video {
+  margin-top: 50px;
+}
+
+.video h5 {
+  letter-spacing: 0.08em;
+  font-size: 20px;
+  margin: 0px 0 20px 0;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 600;
+  display: inline-block;
+  position: absolute;
+  background: #FFF;
+  z-index: 1;
+}
+
+.video h5::before {
+  content: "❯ ";
+  font-size: 23px;
+}
+
+.video h5::after {
+  content: "　";
+}
+
+.video .hr {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  top: 2px;
+  background: #000;
+  height: 2px;
+}
+
+.video .youtube {
+  margin: 80px 0;
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+}
 /*# sourceMappingURL=all.css.map */
